@@ -1,0 +1,35 @@
+.five-product {
+    background: #ECEDFF;
+    margin-top: -40px;
+    padding-top: 160px;
+    &-container {
+        position: relative;
+        .title {
+            margin-bottom: 30px;
+        }
+        .p-18 {
+            margin-bottom: 80px;
+            max-width: 516px;
+        }
+        &::after {
+            display: block;
+            content: '';
+            width: 517px;
+            height: 741px;
+            position: absolute;
+            right: -187px;
+            top: 35px;
+            background: url(../images/product-bg.png);
+        }
+    }
+    &-blocks {
+        max-width: 870px;
+    }
+    &-block {
+        margin-bottom: 60px;
+    }
+}
+.five-product-block__text {
+    font-size: 18px;
+    line-height: 25px;
+}

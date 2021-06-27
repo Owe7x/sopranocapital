@@ -1,0 +1,22 @@
+.btn {
+    width: 323px;
+    height: 68px;
+    background: linear-gradient(180deg, #F79E0E 0%, #F7940E 39.06%, #F87010 100%);
+    box-shadow: 0px 5px 0px #EC6200, 0px 19px 30px rgba(247, 158, 14, 0.5);
+    text-transform: uppercase;
+    color: $white;
+    font-family: 'Gilroy-B';
+    font-size: 18px;
+    line-height: 25px;
+    &--brands {
+        width: 250px;
+        height: 68px;
+        background: #fff;
+        border: 1px solid #279DD9;
+        color: #279DD9;
+        box-shadow: none;
+    }
+    &--mobile {
+        width: 383px;
+    }
+}

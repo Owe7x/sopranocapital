@@ -1,0 +1,21 @@
+.footermain {
+    background: url(../images/bg-5.jpg);
+    padding-top: 120px;
+    padding-bottom: 80px;
+    &-content {
+        .title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    }
+    &-block {
+        font-family: 'Gilroy-EXB';
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 480px;
+        display: flex;
+        &__img {
+            margin-top: -22px;
+        }
+    }
+}

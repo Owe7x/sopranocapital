@@ -1,0 +1,50 @@
+.years {
+    padding-top: 80px;
+    background: url(../images/bg-2.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+    &-container {
+        &__info {
+            .title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.check-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 120px;
+    &__img {
+        margin-right: 30px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+.bg-gray {
+    background: #F9F9F9;
+}
+.bg-blue {
+    background: #279DD9;
+}
+.info-blocks {
+    margin-bottom: 20px;
+}
+.info-block {
+    padding: 30px;
+    .title {
+        margin-bottom: 0;
+    }
+}
+.info-block-main {
+    background: #ECEDFF;
+    padding: 27px 30px;
+    display: flex;
+    justify-content: space-between;
+    .title {
+        margin-bottom: 0;
+    }
+}

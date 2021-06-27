@@ -1,0 +1,39 @@
+.header-content {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__info {
+        max-width: 359px;
+        text-align: center;
+    }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            text-align: right;
+        }
+    }
+}
+.phone {
+    display: flex;
+    align-items: flex-start;
+    &-img {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+        padding-top: 3px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Gilroy-EXB';
+        font-size: 24px;
+    }
+}

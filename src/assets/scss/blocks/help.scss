@@ -1,0 +1,26 @@
+.help {
+    background: #ECEDFF;
+    margin-top: -50px;
+    padding-top: 170px;
+    padding-bottom: 120px;
+    &-content {
+        max-width: 783px;
+        position: relative;
+        .title {
+            margin-bottom: 40px;
+        }
+        .p-24 {
+            margin-bottom: 30px;
+        }
+        &::after {
+            display: block;
+            content: '';
+            width: 527px;
+            height: 752px;
+            background: url(../images/help-img.png);
+            position: absolute;
+            right: -527px;
+            top: -35px;
+        }
+    }
+}

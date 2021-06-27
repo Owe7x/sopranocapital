@@ -1,0 +1,25 @@
+.header-main {
+    background: url(../images/bg-1.jpg);
+    background-repeat: no-repeat;
+    &__content {
+        max-width: 732px;
+        padding-top: 80px;
+        position: relative;
+        &::after {
+            display: block;
+            content: '';
+            width: 495px;
+            height: 503px;
+            background: url(../images/header-main-img.png);
+            position: absolute;
+            right: -415px;
+            top: -70px;
+        }
+        .title {
+            margin-bottom: 50px;
+        }
+        .p-24-b {
+            margin-bottom: 50px;
+        }
+    }
+}
