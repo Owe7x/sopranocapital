@@ -1,3 +1,8 @@
+document.querySelector('.brands-btn').onclick = function() {
+  document.querySelector('.brands-block-none').classList.toggle('visible');
+  document.querySelector('.brands-btn').hidden = true
+}
+
 console.log('file 1');
 var srvPrices = {}
 var c1 = document.getElementById("s3-check1");
@@ -72,4 +77,9 @@ $(".range4").ionRangeSlider({
  srvPrices.totalS4 = data.from_value;
  sliderHandler(srvPrices)
  }
+});
+
+$('.slider-1').slick( {
+  infinite: true,
+  dots: false,
 });

@@ -12,11 +12,11 @@
             display: block;
             content: '';
             width: 495px;
-            height: 503px;
+            height: 407px;
             background: url(../images/header-main-img.png);
             position: absolute;
             right: -415px;
-            top: -70px;
+            top: 23px;
             @include breakpoint($bp-1140) {
                 right: -350px;
             }

@@ -23,6 +23,9 @@ body {
     box-sizing: border-box;
 }
 
+.visible {
+    display: block!important;
+}
 
 /* Blocks */
 @import "blocks/header.scss";
