@@ -8,6 +8,16 @@
     font-family: 'Gilroy-B';
     font-size: 18px;
     line-height: 25px;
+    @include breakpoint($bp-1140) {
+        max-width: 290px;
+    }
+    @include breakpoint($bp-1050) {
+        max-width: 270px;
+    }
+    @include breakpoint($bp-935) {
+        max-width: 229px;
+        margin-top: 10px;
+    }
     &--brands {
         width: 250px;
         height: 68px;

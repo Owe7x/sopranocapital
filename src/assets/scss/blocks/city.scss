@@ -29,6 +29,9 @@
     &-img {
         display: flex;
         justify-content: flex-end;
+        @include breakpoint($bp-992) {
+            display: none;
+        }
     }
 }
 .invest {
@@ -43,6 +46,12 @@
         align-items: center;
         padding: 50px 0 50px 50px;
         height: 225px;
+        @include breakpoint($bp-992) {
+            margin-bottom: 20px;
+        }
+        @include breakpoint($bp-376) {
+            padding: 50px 0 50px 25px;
+        }
         &__title {
             font-size: 24px;
             line-height: 30px;
@@ -61,6 +70,15 @@
             line-height: 30px;
             font-family: 'Gilroy-EXB';
             color: $secondary;
+            @include breakpoint($bp-376) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        &__img {
+            @include breakpoint($bp-376) {
+                display: none;
+            }
         }
     }
 }

@@ -1,6 +1,9 @@
 .header-main {
     background: url(../images/bg-1.jpg);
     background-repeat: no-repeat;
+    @include breakpoint($bp-1140) {
+        background-position: center;
+    }
     &__content {
         max-width: 732px;
         padding-top: 80px;
@@ -14,9 +17,18 @@
             position: absolute;
             right: -415px;
             top: -70px;
+            @include breakpoint($bp-1140) {
+                right: -350px;
+            }
+            @include breakpoint($bp-1050) {
+                display: none;
+            }
         }
         .title {
             margin-bottom: 50px;
+            @include breakpoint($bp-576) {
+                text-align: center;
+            }
         }
         .p-24-b {
             margin-bottom: 50px;

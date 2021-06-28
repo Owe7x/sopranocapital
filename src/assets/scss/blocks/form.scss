@@ -1,18 +1,18 @@
 form {
-    max-width: 1140px;
+    max-width: 1100px;
     height: auto;
     background: linear-gradient(270deg, #2A3E57 0%, #1F2D3F 100%);
     position: relative;
-    padding: 50px 50px 41px;
+    padding: 50px 35px 41px;
     &::before {
         display: block;
         content: '';
-        width: 1100px;
+        width: 95%;
         height: 10px;
         background: #1C2A3A;
         position: absolute;
         bottom: -10px;
-        right: 15px;
+        right: 3%;
     }
 }
 .form-title {
@@ -22,6 +22,10 @@ form {
     margin-bottom: 30px;
     color: $white;
     text-align: center;
+    @include breakpoint($bp-992) {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 .form-blocks {
     margin-bottom: 30px;
@@ -29,6 +33,9 @@ form {
     align-items: center;
     justify-content: space-between;
     &--mobile {
+        flex-direction: column;
+    }
+    @include breakpoint($bp-935) {
         flex-direction: column;
     }
 }
@@ -39,6 +46,10 @@ form {
     line-height: 20px;
     max-width: 736px;
     margin: 0 auto;
+    @include breakpoint($bp-992) {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 .form__link {
     padding-top: 5px;
@@ -48,6 +59,16 @@ form {
         width: 229px;
         height: 73px;
         padding: 25px 30px;
+        @include breakpoint($bp-1140) {
+            max-width: 200px;
+        }
+        @include breakpoint($bp-1050) {
+            max-width: 180px;
+        }
+        @include breakpoint($bp-935) {
+            max-width: 270px;
+            margin-bottom: 10px;
+        }
         &::placeholder {
             color: rgba(93, 90, 91, 0.6);
             font-size: 14px;
@@ -81,14 +102,15 @@ form {
     }
 }
 #form6 {
+    max-width: 540px;
     &::before {
         display: block;
         content: '';
-        width: 408px;
+        width: 95%;
         height: 10px;
         background: #1C2A3A;
         position: absolute;
         bottom: -10px;
-        right: 75px;
+        right: 2%;
     }
 }

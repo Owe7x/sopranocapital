@@ -6,15 +6,39 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 10px;
+        @include breakpoint($bp-992) {
+            flex-direction: column;
+        }
 
+    }
+    &-facebook {
+        @include breakpoint($bp-992) {
+            margin-bottom: 20px;
+        }
     }
     &-info {
         max-width: 359px;
         text-align: center;
+        @include breakpoint($bp-1140) {
+            max-width: 280px;
+        }
+        @include breakpoint($bp-992) {
+            margin-bottom: 20px;
+        }
     }
     &-finish {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+.politic {
+    @include breakpoint($bp-576) {
+        text-align: center;
+    }
+}
+.address {
+    @include breakpoint($bp-576) {
+        text-align: center;
     }
 }

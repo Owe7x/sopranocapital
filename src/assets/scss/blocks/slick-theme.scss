@@ -141,15 +141,7 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 10px 0;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 22px;
-    @include breakpoint($bp-1600) {
-        right: 38%;
-    }
-    @include breakpoint($bp-1441) {
-        right: 36%;
-    }
-    @include breakpoint($bp-1024) {
-        display: none!important;
-    }
+
     li {
         position: relative;
         display: inline-block;

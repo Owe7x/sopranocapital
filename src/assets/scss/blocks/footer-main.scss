@@ -2,6 +2,9 @@
     background: url(../images/bg-5.jpg);
     padding-top: 120px;
     padding-bottom: 80px;
+    @include breakpoint($bp-1140) {
+        background-position: center;
+    }
     &-content {
         .title {
             text-align: center;
@@ -14,8 +17,26 @@
         line-height: 30px;
         max-width: 480px;
         display: flex;
+        margin-bottom: 20px;
+        @include breakpoint($bp-376) {
+            font-size: 20px;
+            line-height: 25px;
+        }
         &__img {
             margin-top: -22px;
+            @include breakpoint($bp-992) {
+                transform: rotate(90deg);
+                margin-top: 0;
+            }
+        }
+        @include breakpoint($bp-992) {
+            margin: 0 auto 20px;
+        }
+    }
+    &-form {
+        @include breakpoint($bp-992) {
+            display: flex;
+            justify-content: center;
         }
     }
 }

@@ -3,6 +3,9 @@
     background: url(../images/bg-2.jpg);
     background-repeat: no-repeat;
     padding-bottom: 120px;
+    @include breakpoint($bp-768) {
+        padding-bottom: 80px;
+    }
     &-container {
         &__info {
             .title {
@@ -23,6 +26,9 @@
         font-size: 18px;
         line-height: 25px;
     }
+    @include breakpoint($bp-768) {
+        margin-bottom: 60px;
+    }
 }
 .bg-gray {
     background: #F9F9F9;
@@ -32,6 +38,9 @@
 }
 .info-blocks {
     margin-bottom: 20px;
+    @include breakpoint($bp-768) {
+        margin-top: 20px;
+    }
 }
 .info-block {
     padding: 30px;

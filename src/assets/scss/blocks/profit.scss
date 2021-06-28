@@ -1,11 +1,20 @@
 .profit {
     background: #F9F9F9;
     padding-top: 120px;
+    @include breakpoint($bp-768) {
+        padding-top: 80px;
+    }
     &-container {
         margin-bottom: 90px;
+        @include breakpoint($bp-768) {
+            margin-bottom: 60px;
+        }
         &-profit {
             margin-bottom: 120px;
             .title {
+                margin-bottom: 80px;
+            }
+            @include breakpoint($bp-768) {
                 margin-bottom: 80px;
             }
         }
@@ -16,12 +25,12 @@
         }
     }
     &-block {
-        padding: 50px 0 0 50px;
+        padding: 50px 0 50px 50px;
         display: flex;
         justify-content: space-between;
         background: #fff;
         margin-bottom: 20px;
-        height: 270px;
+        min-height: 270px;
         &-info {
             max-width: 341px;
         }
@@ -42,20 +51,53 @@
             font-size: 18px;
             line-height: 25px;
         }
+        &__img {
+            @include breakpoint($bp-376) {
+                display: none;
+            }
+        }
     }
 }
 
 .win-img {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    img {
+        @include breakpoint($bp-768) {
+            max-width: 230px;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
 }
 .win-text {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 20px;
+    @include breakpoint($bp-768) {
+        text-align: center;
+    }
+    @include breakpoint($bp-376) {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 .win-profit {
     color: $secondary;
     font-size: 24px;
     line-height: 30px;
     font-family: 'Gilroy-EXB';
+    @include breakpoint($bp-768) {
+        text-align: center;
+    }
+    @include breakpoint($bp-376) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+.win-container-block {
+    @include breakpoint($bp-768) {
+        margin-bottom: 30px;
+    }
 }

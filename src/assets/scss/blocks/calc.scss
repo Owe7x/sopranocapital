@@ -11,6 +11,10 @@
     &-info {
         display: flex;
         justify-content: space-between;
+        @include breakpoint($bp-935) {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
         &__text {
             background: #F9F9F9;
             padding: 50px 0 50px 100px;
@@ -18,6 +22,10 @@
             height: 340px;
             background: url(../images/calc-img-1.png);
             margin-top: 50px;
+            @include breakpoint($bp-376) {
+                padding: 25px 0 25px 25px;
+            }
+            
         }
         &__title {
             font-family: 'Gilroy-EXB';
@@ -32,6 +40,11 @@
         &__block {
             margin-bottom: 30px;
         }
+        &__img {
+            @include breakpoint($bp-935) {
+                display: none;
+            }
+        }
  
     }
     &-calc {
@@ -39,21 +52,28 @@
         padding: 50px;
         margin-bottom: 80px;
         position: relative;
+        @include breakpoint($bp-376) {
+            padding: 10px;
+        }
         &::before {
             display: block;
             content: '';
-            width: 1100px;
+            width: 95%;
             height: 10px;
             background: #1C2A3A;
             position: absolute;
             bottom: -10px;
-            right: 15px;
+            right: 2%;
         }
         &__title {
             font-size: 18px;
             line-height: 25px;
             color: $white;
             font-family: 'Gilroy-EXB';
+            @include breakpoint($bp-376) {
+                font-size: 16px;
+                line-height: 20px;
+            }
             
         }
         &__number {
@@ -79,6 +99,10 @@
                 top: -30px;
                 right: 50%;
             }
+            @include breakpoint($bp-376) {
+                font-size: 11px;
+                line-height: 20px;
+            }
         }
         &-info {
             padding: 50px 0 50px 40px;
@@ -88,6 +112,17 @@
                 color: $white;
                 font-family: 'Gilroy-EXB';
                 margin-bottom: 20px;
+                @include breakpoint($bp-992) {
+                    font-size: 32px;
+                    line-height: 45px;
+                }
+                @include breakpoint($bp-376) {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            @include breakpoint($bp-768) {
+                padding: 50px 0 50px 0px;
             }
         }
         &-profit-1 {
@@ -98,6 +133,15 @@
             text-transform: uppercase;
             color: $white;
             font-family: 'Gilroy-EXB';
+            @include breakpoint($bp-768) {
+                max-width: 400px;
+                font-size: 36px;
+                line-height: 45px;
+            }
+            @include breakpoint($bp-376) {
+                font-size: 24px;
+                line-height: 30px;
+            }
         }
     }
 }

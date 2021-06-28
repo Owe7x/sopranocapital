@@ -20,6 +20,9 @@
             right: -187px;
             top: 35px;
             background: url(../images/product-bg.png);
+            @include breakpoint($bp-1140) {
+                display: none;
+            }
         }
     }
     &-blocks {
@@ -27,9 +30,22 @@
     }
     &-block {
         margin-bottom: 60px;
+        &__text {
+            @include breakpoint($bp-576) {
+                text-align: center;
+            }
+        }
+        &__img {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 .five-product-block__text {
     font-size: 18px;
     line-height: 25px;
+    @include breakpoint($bp-768) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
