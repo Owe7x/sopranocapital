@@ -14685,6 +14685,28 @@ Build date: 2019-12-19 16:51:02
     line-height: 25px;
 }
 
+.calc-calc-li:first-child::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background: #fff;
+    top: -30px;
+    left: 5px;
+}
+
+.calc-calc-li:last-child::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background: #fff;
+    top: -30px;
+    right: 5px;
+}
+
 .calc-calc-li::after {
     display: block;
     content: '';

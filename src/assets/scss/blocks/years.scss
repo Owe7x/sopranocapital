@@ -27,7 +27,9 @@
         line-height: 25px;
     }
     @include breakpoint($bp-768) {
-        margin-bottom: 60px;
+        max-width: 300px;
+        justify-content: flex-start;
+        margin: 0 auto 60px;
     }
 }
 .bg-gray {

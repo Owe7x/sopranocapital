@@ -59,7 +59,7 @@
 }
 .slider-info-b-1 {
     background: $secondary;
-    padding: 30px 60px;
+    padding: 20px 30px 20px 20px;
     display: flex;
     align-items: center;
     font-family: 'Gilroy-EXB';
@@ -71,12 +71,19 @@
     @include breakpoint($bp-576) {
         padding: 15px 30px;
     }
-    @include breakpoint($bp-376) {
+    @include breakpoint($bp-425) {
         padding: 10px 20px;
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 25px;
     }
 }
 .slider-info__img {
     margin-right: 30px;
+    @include breakpoint($bp-425) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 .slider-p-1 {
     font-size: 18px;

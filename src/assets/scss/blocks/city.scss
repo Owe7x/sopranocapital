@@ -76,6 +76,7 @@
             }
         }
         &__img {
+            width: 130px;
             @include breakpoint($bp-376) {
                 display: none;
             }

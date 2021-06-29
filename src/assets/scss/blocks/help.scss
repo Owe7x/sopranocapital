@@ -8,9 +8,17 @@
         position: relative;
         .title {
             margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
         }
         .p-24 {
             margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .p-24-b {
+            position: relative;
+            z-index: 2;
         }
         &::after {
             display: block;
@@ -22,8 +30,57 @@
             right: -527px;
             top: -35px;
             @include breakpoint($bp-1140) {
-                display: none;
+                right: -300px;
+            }
+            @include breakpoint($bp-992) {
+                background: url(../images/help-img-2.png);
+                width: 396px;
+                height: 565px;
+                right: -150px;
+                top: 15px;
+            }
+            @include breakpoint($bp-768) {
+                right: -100px;
+                bottom: 0;
+            }
+            @include breakpoint($bp-576) {
+                top: 140px;
+            }
+            @include breakpoint($bp-425) {
+                top: 237px;
+            }
+            @include breakpoint($bp-376) {
+                top: 170px;
+            }
+            @include breakpoint($bp-321) {
+                top: 298px;
+            }
+        }
+        @include breakpoint($bp-1140) {
+            &::before {
+                display: block;
+                content: '';
+                width: 1140px;
+                height: 940px;
+                background: rgba($color: #fff, $alpha: 0.5);
+                position: absolute;
+                z-index: 2;
+                right: 0;
+                top: -110px;
+                @include breakpoint($bp-1140) {
+                    right: -340px;
+                }
+                @include breakpoint($bp-768) {
+                    height: 830px;
+                }
+                @include breakpoint($bp-576) {
+                    height: 950px;
+                }
+                @include breakpoint($bp-321) {
+                    height: 1000px;
+                }
             }
         }
     }
+
 }

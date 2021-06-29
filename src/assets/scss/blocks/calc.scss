@@ -52,7 +52,10 @@
         padding: 50px;
         margin-bottom: 80px;
         position: relative;
-        @include breakpoint($bp-376) {
+        @include breakpoint($bp-576) {
+            padding: 25px;
+        }
+        @include breakpoint($bp-425) {
             padding: 10px;
         }
         &::before {
@@ -70,7 +73,7 @@
             line-height: 25px;
             color: $white;
             font-family: 'Gilroy-EXB';
-            @include breakpoint($bp-376) {
+            @include breakpoint($bp-425) {
                 font-size: 16px;
                 line-height: 20px;
             }
@@ -82,6 +85,10 @@
             color: $white;
             margin-bottom: 50px;
             padding-top: 45px;
+            @include breakpoint($bp-425) {
+                padding-top: 25px;
+                margin-bottom: 25px;
+            }
         }
         &-li {
             list-style: none;
@@ -89,6 +96,38 @@
             font-family: 'Gilroy-EXB';
             font-size: 18px;
             line-height: 25px;
+            &:first-child {
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 1px;
+                    height: 20px;
+                    position: absolute;
+                    background: #fff;
+                    top: -30px;
+                    left: 5px;
+                    @include breakpoint($bp-425) {
+                        top: -15px;
+                        height: 10px;
+                    }
+                }
+            }
+            &:last-child {
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 1px;
+                    height: 20px;
+                    position: absolute;
+                    background: #fff;
+                    top: -30px;
+                    right: 5px;
+                    @include breakpoint($bp-425) {
+                        top: -15px;
+                        height: 10px;
+                    }
+                }
+            }
             &::after {
                 display: block;
                 content: '';
@@ -98,8 +137,16 @@
                 background: #fff;
                 top: -30px;
                 right: 50%;
+                @include breakpoint($bp-425) {
+                    top: -15px;
+                    height: 10px;
+                }
             }
-            @include breakpoint($bp-376) {
+            @include breakpoint($bp-576) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            @include breakpoint($bp-425) {
                 font-size: 11px;
                 line-height: 20px;
             }
@@ -116,13 +163,16 @@
                     font-size: 32px;
                     line-height: 45px;
                 }
-                @include breakpoint($bp-376) {
+                @include breakpoint($bp-425) {
                     font-size: 24px;
                     line-height: 30px;
                 }
             }
             @include breakpoint($bp-768) {
                 padding: 50px 0 50px 0px;
+            }
+            @include breakpoint($bp-425) {
+                padding: 25px 0;
             }
         }
         &-profit-1 {
@@ -138,7 +188,7 @@
                 font-size: 36px;
                 line-height: 45px;
             }
-            @include breakpoint($bp-376) {
+            @include breakpoint($bp-425) {
                 font-size: 24px;
                 line-height: 30px;
             }

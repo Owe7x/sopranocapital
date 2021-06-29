@@ -68,10 +68,11 @@ form {
         @include breakpoint($bp-935) {
             max-width: 270px;
             margin-bottom: 10px;
+            height: 85px;
         }
         &::placeholder {
             color: rgba(93, 90, 91, 0.6);
-            font-size: 14px;
+            font-size: 16px;
             line-height: 20px;
         }
     }
@@ -158,5 +159,45 @@ form {
     padding: 50px;
     @include breakpoint($bp-425) {
         padding: 10px;
+    }
+}
+#form8 {
+    width: 100%;
+    background: none;
+    position: relative;
+    padding: 0;
+    &::before {
+        display: none;
+    }
+    .form-title {
+        color: $primary;
+        margin-bottom: 10px;
+    }
+    .form-p {
+        color: $primary;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
+        @include breakpoint($bp-992) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .form-blocks {
+        flex-direction: column;
+    }
+    .form__link {
+        input {
+            width: 325px;
+            margin-bottom: 30px;
+            @include breakpoint($bp-425) {
+                width: 229px;
+            }
+        }
+    }
+    .btn {
+        @include breakpoint($bp-425) {
+            width: 260px!important;
+        }
     }
 }

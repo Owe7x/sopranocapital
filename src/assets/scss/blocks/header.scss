@@ -10,6 +10,14 @@
         @include breakpoint($bp-935) {
             margin-bottom: 20px;
         }
+        @include breakpoint($bp-425) {
+            margin-bottom: 10px;
+        }
+        img {
+            @include breakpoint($bp-425) {
+               max-width: 200px;
+            }
+        }
     }
     &__info {
         max-width: 359px;
@@ -17,6 +25,10 @@
         @include breakpoint($bp-935) {
             margin-bottom: 20px;
         }
+        @include breakpoint($bp-425) {
+            font-size: 12px;
+            margin-bottom: 10px;
+         }
     }
     &__phone {
         display: flex;
@@ -26,6 +38,9 @@
             text-decoration: none;
             font-size: 18px;
             text-align: right;
+            @include breakpoint($bp-425) {
+                font-size: 12px;
+             }
         }
     }
     @include breakpoint($bp-935) {
@@ -35,6 +50,10 @@
 .phone {
     display: flex;
     align-items: flex-start;
+    @include breakpoint($bp-425) {
+        justify-content: center;
+        margin-bottom: 5px;
+    }
     &-img {
         width: 25px;
         height: 25px;
@@ -43,11 +62,33 @@
         img {
             width: 100%;
             height: auto;
+            @include breakpoint($bp-425) {
+                max-width: 18px;
+            }
         }
     }
     a {
         text-decoration: none;
         font-family: 'Gilroy-EXB';
         font-size: 24px;
+    }
+}
+
+#telephone {
+    @include breakpoint($bp-425) {
+        display: none;
+    }
+}
+.header-btn-mobile {
+    display: none;
+    justify-content: center;
+    margin-bottom: 30px;
+    @include breakpoint($bp-425) {
+        display: flex;
+    }
+}
+#form1 {
+    @include breakpoint($bp-425) {
+        display: none;
     }
 }
