@@ -15,7 +15,7 @@ function sliderHandler(price) {
   price = srvPrices;
  } 
 
- var persents = (price.totalS2 * price.totalS1) + (price.totalS3 * price.totalS1) + (price.totalS4 * price.totalS1)   ;
+ var persents = (price.totalS1 * price.totalS2 * 0.25) + (price.totalS1 * price.totalS3 * 0.05) + (price.totalS1 * price.totalS4 * 0.70)  ;
  var profit = (price.totalS1 * price.totalS2 * 0.25) + (price.totalS1 * price.totalS3 * 0.05) + (price.totalS1 * price.totalS4 * 0.70) - 177937;
  document.getElementById("s1").innerHTML = persents.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей';
  document.getElementById("s2").innerHTML = profit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' ' + 'рублей'; //

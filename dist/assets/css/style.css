@@ -15121,6 +15121,50 @@ Build date: 2019-12-19 16:51:02
     }
 }
 
+#calc-li-1 {
+    padding-left: 10px;
+}
+
+#calc-li-1::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background: #fff;
+    top: -30px;
+    right: 25%;
+}
+
+@media screen and (max-width: 425px) {
+    #calc-li-1::after {
+        top: -15px;
+        height: 10px;
+    }
+}
+
+#calc-li-3 {
+    padding-right: 5px;
+}
+
+#calc-li-3::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background: #fff;
+    top: -30px;
+    right: 70%;
+}
+
+@media screen and (max-width: 425px) {
+    #calc-li-3::after {
+        top: -15px;
+        height: 10px;
+    }
+}
+
 .city {
     background: #F9F9F9;
     margin-top: -50px;
