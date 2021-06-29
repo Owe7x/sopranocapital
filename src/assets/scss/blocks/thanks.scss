@@ -1,0 +1,24 @@
+.thanks {
+    background: url(../images/bg-1.jpg);
+    background-repeat: no-repeat;
+    &-content {
+        max-width: 500px;
+        margin: 160px auto 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 55px;
+        font-family: 'Gilroy-EXB';
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 30px;
+        font-family: 'Gilroy-EXB';
+    }
+}
