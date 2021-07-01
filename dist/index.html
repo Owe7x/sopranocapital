@@ -14,6 +14,21 @@
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
     <title>SOPRANOCAPITAL | Home</title>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(82293478, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/82293478" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <div style="max-width: 1920px; margin: 0 auto;" >
@@ -22,6 +37,9 @@
                 <div class="header-content">
                     <div class="header-content__logo">
                         <img src="assets/images/logo.png" alt="">
+                        <div class="phone-img-1">
+                            <img src="assets/images/phone.png" alt="">
+                        </div>
                     </div>
                     <div class="header-content__info">
                         Франшиза международной консалтинговой компании с представительствами в Европе и США
@@ -55,23 +73,19 @@
                 <div class="header-btn-mobile">
                     <a data-fancybox href="#mobile-form1"><button class="btn boot">Получить презентацию</button></a>
                 </div>
-                <form action="mail.php" method="post" id="form1">
+                <form id="form1">
                     <div class="form-title">
                         Отправьте заявку и получите полную презентацию франшизы
                     </div>
                     <div class="form-blocks">
-                        <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                        <input type="hidden" name="form_subject" value="Первая Форма">
                         <div class="form__link">
-                            <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
-                            <label for="fname" class="error"></label>
+                            <input type="text" name="name" placeholder="Введите ваше имя" required />
                         </div>
                         <div class="form__link">
-                            <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                            <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                         </div>
                         <div class="form__link form__link--340">
-                            <input type="email" data-validate-field="email" name="email" placeholder="E-mail"></input>
+                            <input type="email" name="email" placeholder="E-mail" required />
                         </div>
                         <div class="button-img">
                             <button type="submit" value="Submit" class="btn boot">  Получить презентацию</button>  
@@ -188,11 +202,13 @@
                                 <div class="col-md-6">
                                     <div class="profit-block">
                                         <div class="profit-block-info">
-                                            <div class="profit-block__title">
-                                                01 -
-                                            </div>
-                                            <div class="profit-block__subtitle">
-                                                Получение заказа
+                                            <div class="block-top-m">
+                                                <div class="profit-block__title">
+                                                    01 -
+                                                </div>
+                                                <div class="profit-block__subtitle">
+                                                    Получение заказа
+                                                </div>
                                             </div>
                                             <div class="profit-block__p">
                                                 Вы принимаете звонок от клиента, отвечаете на вопросы, согласно скриптам продаж
@@ -206,11 +222,13 @@
                                 <div class="col-md-6">
                                     <div class="profit-block">
                                         <div class="profit-block-info">
-                                            <div class="profit-block__title">
-                                                02 -
-                                            </div>
-                                            <div class="profit-block__subtitle">
-                                                Оформление сделки
+                                            <div class="block-top-m">
+                                                <div class="profit-block__title">
+                                                    02 -
+                                                </div>
+                                                <div class="profit-block__subtitle">
+                                                    Оформление сделки
+                                                </div>
                                             </div>
                                             <div class="profit-block__p">
                                                 Заключаете договор и получаете оплату за услуги
@@ -224,11 +242,13 @@
                                 <div class="col-md-6">
                                     <div class="profit-block">
                                         <div class="profit-block-info">
-                                            <div class="profit-block__title">
-                                                03 -
-                                            </div>
-                                            <div class="profit-block__subtitle">
-                                                Анализ и поиск инвесторов
+                                            <div class="block-top-m">
+                                                <div class="profit-block__title">
+                                                    03 -
+                                                </div>
+                                                <div class="profit-block__subtitle">
+                                                    Анализ и поиск инвесторов
+                                                </div>
                                             </div>
                                             <div class="profit-block__p">
                                                 Передаёте всю информацию головной компании и ждёте готовых предложений по привлечению инвестиций
@@ -309,26 +329,22 @@
                         </div>
                     </div>
                 </div>
-                <form action="mail.php" method="post" id="form2">
+                <form id="form2">
                     <div class="form-title">
                         Отправьте заявку, получите презентацию и подробную схему работы
                     </div>
                     <div class="form-blocks">
-                        <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                        <input type="hidden" name="form_subject" value="Вторая Форма">
                         <div class="form__link">
-                            <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
-                            <label for="fname" class="error"></label>
+                            <input type="text" name="name" placeholder="Введите ваше имя" required  />
                         </div>
                         <div class="form__link">
-                            <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                            <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                         </div>
                         <div class="form__link form__link--340">
-                            <input type="email" data-validate-field="email" name="email" placeholder="E-mail"></input>
+                            <input type="email" name="email" placeholder="E-mail" required />
                         </div>
                         <div class="button-img">
-                            <button type="submit" value="Submit" class="btn boot"> <img src="assets/images/btn-img-1.png" alt=""> ПОЛУЧИТЬ ПОЛНУЮ ПРЕЗЕНТАЦИЮ</button>  
+                            <button type="submit" value="Submit" class="btn boot">ПОЛУЧИТЬ ПОЛНУЮ ПРЕЗЕНТАЦИЮ</button>  
                         </div>
                     </div> 
                     <div class="form-p">
@@ -413,32 +429,32 @@
                     </div>
                     <div class="brands-blocks">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <div class="brands-block">
                                     <img src="assets/images/brands-1.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <div class="brands-block">
                                     <img src="assets/images/brands-2.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <div class="brands-block">
                                     <img src="assets/images/brands-3.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <div class="brands-block">
                                     <img src="assets/images/brands-4.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <div class="brands-block">
                                     <img src="assets/images/brands-5.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-6 col-md-4">
                                 <div class="brands-block">
                                     <img src="assets/images/brands-6.png" alt="">
                                 </div>
@@ -495,14 +511,17 @@
                                 <div class="row">
                                     <div class="col-12 col-xl-7">
                                         <div class="slider-img-1">
-                                            <img src="assets/images/client-img-1.jpg" alt="">
+                                            <img src="assets/images/keys-2.png" alt="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-5">
+                                        <div class="commpain">
+                                            <img src="assets/images/keys-1.png" alt="">
+                                        </div>
                                         <div class="slider-info-1">
-                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Биокинетика»  </li>
-                                            <li class="slider-li-1"> <span class="bold">Город:</span> Петровск  </li>
-                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Производство улучшителя почвы нового поколения  </li>
+                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Полимз-Тара»  </li>
+                                            <li class="slider-li-1"> <span class="bold">Город:</span> Казань  </li>
+                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Производство МАФов, бордюров, пандусов с применением инновационного состава при отливе продукции  </li>
                                             <div class="slider-info-b-1">
                                                 <div class="slider-info__img">
                                                     <img src="assets/images/icon-3.png" alt="">
@@ -510,7 +529,7 @@
                                                 РЕЗУЛЬТАТ: ПОЛУЧЕН ГРАНТ В РАЗМЕРЕ <br>  2 000 000 РУБЛЕЙ
                                             </div>
                                             <div class="slider-p-1">
-                                                «Сработали слаженно. Предложили податься на несколько грантов. В итоге — успех всего за 4 месяца».
+                                                «Информируют о каждом шаге. Представляют подробную презентацию и предлагают несколько вариантов для получения инвестиций. Отлично сработано!».
                                             </div>
                                             <div class="slider-letter-1">
                                                 <a href="">Благодарственное письмо</a>
@@ -519,7 +538,7 @@
                                                 <div class="slider-otz-img-1">
                                                     <img src="assets/images/icon-4.png" alt="">
                                                 </div>
-                                                <a href="">Смотреть видеоотзыв</a>
+                                                <a data-fancybox href="#keys-1">Смотреть видеоотзыв</a>
                                             </div>
                                         </div>
                                     </div>
@@ -536,34 +555,35 @@
                                 <div class="row">
                                     <div class="col-12 col-xl-7">
                                         <div class="slider-img-1">
-                                            <img src="assets/images/client-img-1.jpg" alt="">
+                                            <img src="assets/images/keys-3.png" alt="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-5">
                                         <div class="commpain">
-                                            <img src="assets/images/key-2.png" alt="">
+                                            <img src="assets/images/keys-4.png" alt="">
                                         </div>
                                         <div class="slider-info-1">
-                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Полимиз»  </li>
+                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Цифровые эстеты»  </li>
                                             <li class="slider-li-1"> <span class="bold">Город:</span> Казань  </li>
-                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Производство МАФов,бордюров, пандусов с применением инновационного состава при отливе продукции  </li>
+                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Компания разработала уникальный продукт  </li>
                                             <div class="slider-info-b-1">
                                                 <div class="slider-info__img">
                                                     <img src="assets/images/icon-3.png" alt="">
                                                 </div>
-                                                РЕЗУЛЬТАТ: ПОЛУЧЕН ГРАНТ В РАЗМЕРЕ  <br> 2 000 000 РУБЛЕЙ
+                                                РЕЗУЛЬТАТ: ПОЛУЧЕНО 2 ГРАНТА НА 5 МЛН
+                                                РУБЛЕЙ
                                             </div>
                                             <div class="slider-p-1">
-                                                «Информируют о каждом шаге. Представляют подробную презентацию и предлагают несколько вариантов для получения инвестиций. Отлично сработано!».
+                                                «Команда сверхпрофессионально подходит к вопросам! Здорово разбираетесь во всех формальностях. Мы очень благодарны вам! Идём дальше к новым вершинам!».
                                             </div>
                                             <div class="slider-letter-1">
-                                                <a href="">Благодарственное письмо</a>
+                                                <a data-fancybox href="#keys-2-otz">Благодарственное письмо</a>
                                             </div>
                                             <div class="slider-otz-1">
                                                 <div class="slider-otz-img-1">
                                                     <img src="assets/images/icon-4.png" alt="">
                                                 </div>
-                                                <a href="">Смотреть видеоотзыв</a>
+                                                <a data-fancybox href="#keys-2">Смотреть видеоотзыв</a>
                                             </div>
                                         </div>
                                     </div>
@@ -580,35 +600,35 @@
                                 <div class="row">
                                     <div class="col-12 col-xl-7">
                                         <div class="slider-img-1">
-                                            <img src="assets/images/client-img-1.jpg" alt="">
+                                            <img src="assets/images/keys-5.png" alt="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-5">
                                         <div class="commpain">
-                                            <img src="assets/images/key-3.png" alt="">
+                                            <img src="assets/images/keys-6.png" alt="">
                                         </div>
                                         <div class="slider-info-1">
-                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Ольдам»  </li>
-                                            <li class="slider-li-1"> <span class="bold">Город:</span> Москва  </li>
-                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Проектирование и производство сверхмощного накопителя для районов Крайнего Севера </li>
+                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Пенополиуретан»  </li>
+                                            <li class="slider-li-1"> <span class="bold">Город:</span> Казань  </li>
+                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Производство инновационного утеплителя </li>
                                             <div class="slider-info-b-1">
                                                 <div class="slider-info__img">
                                                     <img src="assets/images/icon-3.png" alt="">
                                                 </div>
-                                                РЕЗУЛЬТАТ: ПОЛУЧЕНИЕ
-                                                ГРАНТОВ НА ОБЩУЮ СУММУ  95 000 000 РУБЛЕЙ
+                                                РЕЗУЛЬТАТ: ПРИВЛЕЧЕНИЕ ИНВЕСТИЦИЙ В РАЗМЕРЕ 25 000 000 РУБЛЕЙ ОТ ФПИ В ОБМЕН НА ДОЛЮ
                                             </div>
                                             <div class="slider-p-1">
-                                                «Всегда были в курсе положения дел — информировали оперативно. Действуя по предложенной схеме, получили 95 миллионов».
+                                                «Работа с фондами обычно очень затяжная и перегружена бюрократией. Компания SOPRANO CAPITAL избавила от лишних бумаг и помогла привлечь нужную сумму».
                                             </div>
                                             <div class="slider-letter-1">
-                                                <a href="">Благодарственное письмо</a>
+                                                <a data-fancybox href="#keys-3-otz">Благодарственное письмо</a>
                                             </div>
                                             <div class="slider-otz-1">
                                                 <div class="slider-otz-img-1">
                                                     <img src="assets/images/icon-4.png" alt="">
                                                 </div>
-                                                <a href="">Смотреть видеоотзыв</a>
+                                                <a data-fancybox href="#keys-3">Смотреть видеоотзыв</a>
+                                             
                                             </div>
                                         </div>
                                     </div>
@@ -625,38 +645,36 @@
                                 <div class="row">
                                     <div class="col-12 col-xl-7">
                                         <div class="slider-img-1">
-                                            <img src="assets/images/client-img-1.jpg" alt="">
+                                            <img src="assets/images/keys-7.png" alt="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-5">
                                         <div class="commpain">
-                                            <img src="assets/images/key-4.png" alt="">
+                                            <img src="assets/images/keys-8.png" alt="">
                                         </div>
                                         <div class="slider-info-1">
-                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «Пенополиуретан»  </li>
+                                            <li class="slider-li-1"> <span class="bold">Компания:</span> ООО «ГлобалТех»  </li>
                                             <li class="slider-li-1"> <span class="bold">Город:</span> Казань  </li>
-                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Производство инновационного утеплителя </li>
+                                            <li class="slider-li-1"> <span class="bold">Сфера деятельности:</span> Компания занимается разработкой ПО на основе машинного обучения </li>
                                             <div class="slider-info-b-1">
                                                 <div class="slider-info__img">
                                                     <img src="assets/images/icon-3.png" alt="">
                                                 </div>
-                                                РЕЗУЛЬТАТ: ПРИВЛЕЧЕНИЕ
-                                                ИНВЕСТИЦИЙ В РАЗМЕРЕ
-                                             
-                                                25 000 000 РУБЛЕЙ ОТ
-                                                ФПИ В ОБМЕН НА ДОЛЮ
+                                                РЕЗУЛЬТАТ: ПОЛУЧЕН
+                                                ГРАНТ В РАЗМЕРЕ
+                                                2 МЛН РУБЛЕЙ
                                             </div>
                                             <div class="slider-p-1">
                                                 «Работа с фондами обычно очень затяжная и перегружена бюрократией. Компания SOPRANO CAPITAL избавила от лишних бумаг и помогла привлечь нужную сумму».
                                             </div>
                                             <div class="slider-letter-1">
-                                                <a href="">Благодарственное письмо</a>
+                                                <a data-fancybox href="#keys-4-otz">Благодарственное письмо</a>
                                             </div>
                                             <div class="slider-otz-1">
                                                 <div class="slider-otz-img-1">
                                                     <img src="assets/images/icon-4.png" alt="">
                                                 </div>
-                                                <a href="">Смотреть видеоотзыв</a>
+                                                <a data-fancybox href="#keys-4">Смотреть видеоотзыв</a>
                                             </div>
                                         </div>
                                     </div>
@@ -664,26 +682,22 @@
                             </div>
                         </div>
                     </div>
-                    <form action="mail.php" method="post" id="form3">
+                    <form id="form3">
                         <div class="form-title">
                             Получите презентацию с полной подборкой из 56 кейсов. <br> Узнайте, как зарабатывает SOPRANO CAPITAL
                         </div>
                         <div class="form-blocks">
-                            <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                            <input type="hidden" name="form_subject" value="Третья Форма">
                             <div class="form__link">
-                                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
-                                <label for="fname" class="error"></label>
+                                <input type="text" name="name" placeholder="Введите ваше имя" required />
                             </div>
                             <div class="form__link">
-                                <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                                <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                             </div>
                             <div class="form__link form__link--340">
-                                <input type="email" data-validate-field="email" name="email" placeholder="E-mail"></input>
+                                <input type="email" name="email" placeholder="E-mail" required />
                             </div>
                             <div class="button-img">
-                                <button type="submit" value="Submit" class="btn boot"> <img src="assets/images/btn-img-1.png" alt=""> ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</button>  
+                                <button type="submit" value="Submit" class="btn boot">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</button>  
                             </div>
                         </div> 
                         <div class="form-p">
@@ -811,26 +825,23 @@
                             </div>
                         </div>
                     </div>
-                    <form action="mail.php" method="post" id="form4">
+                    <form id="form4">
                         <div class="form-title">
                             Получите план для выхода на прибыль <span id="s3"></span> рублей в месяц
                         </div>
                         <div class="form-blocks">
-                            <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                            <input type="hidden" name="form_subject" value="Четвертая Форма">
                             <div class="form__link">
-                                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
+                                <input type="text" id="fname" name="name" placeholder="Введите ваше имя" required />
                                 <label for="fname" class="error"></label>
                             </div>
                             <div class="form__link">
-                                <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                                <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                             </div>
                             <div class="form__link form__link--340">
-                                <input type="email" data-validate-field="email" name="email" placeholder="E-mail"></input>
+                                <input type="email" name="email" placeholder="E-mail" required />
                             </div>
                             <div class="button-img">
-                                <button type="submit" value="Submit" class="btn boot"> <img src="assets/images/btn-img-1.png" alt=""> ПОЛУЧИТЬ ПОЛНУЮ ПРЕЗЕНТАЦИЮ</button>  
+                                <button type="submit" value="Submit" class="btn boot">ПОЛУЧИТЬ ПОЛНУЮ ПРЕЗЕНТАЦИЮ</button>  
                             </div>
                         </div> 
                         <div class="form-p"> 
@@ -895,11 +906,13 @@
                                 <div class="col-lg-6">
                                     <div class="invest-block">
                                         <div class="invest-block-info">
-                                            <div class="invest-block__title">
-                                                01 -
-                                            </div>
-                                            <div class="invest-block__subtitle">
-                                                Получение заказа
+                                            <div class="block-top-m">
+                                                <div class="invest-block__title">
+                                                    01 -
+                                                </div>
+                                                <div class="invest-block__subtitle">
+                                                    Получение заказа
+                                                </div>
                                             </div>
                                             <div class="invest-block__number">
                                                 ОТ 590 000 ДО 700 000 РУБЛЕЙ
@@ -913,11 +926,13 @@
                                 <div class="col-lg-6">
                                     <div class="invest-block">
                                         <div class="invest-block-info">
-                                            <div class="invest-block__title">
-                                                02 -
-                                            </div>
-                                            <div class="invest-block__subtitle">
-                                                Вложения в открытие офиса
+                                            <div class="block-top-m">
+                                                <div class="invest-block__title">
+                                                    02 -
+                                                </div>
+                                                <div class="invest-block__subtitle">
+                                                    Вложения в открытие офиса
+                                                </div>
                                             </div>
                                             <div class="invest-block__number">
                                                 ОТ 300 000 ДО 500 000 РУБЛЕЙ
@@ -931,23 +946,20 @@
                             </div>
                         </div>
                     </div>
-                    <form action="mail.php" method="post" id="form5">
+                    <form id="form5">
                         <div class="form-title">
                             Получите полное описание франчайзингового пакета
                         </div>
                         <div class="form-blocks">
-                            <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                            <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                            <input type="hidden" name="form_subject" value="Пятая Форма">
                             <div class="form__link">
-                                <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
+                                <input type="text" id="fname" name="name" placeholder="Введите ваше имя" required />
                                 <label for="fname" class="error"></label>
                             </div>
                             <div class="form__link">
-                                <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                                <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                             </div>
                             <div class="form__link form__link--340">
-                                <input type="email" data-validate-field="email" name="email" placeholder="E-mail"></input>
+                                <input type="email" name="email" placeholder="E-mail" required />
                             </div>
                             <div class="button-img">
                                 <button type="submit" value="Submit" class="btn boot">  ПОЛУЧИТЬ ОПИСАНИЕ</button>  
@@ -975,6 +987,9 @@
                     <div class="p-24-b">
                         «Я чувствую готовность к новому этапу — созданию франшизы. Верю, что благодаря вам, нашим будущим партнёрам, уже через год наша компания охватит всю Россию. Давайте сделаем это вместе. Присоединяйтесь к компании-лидеру в сфере привлечения инвестиций!».
                     </div>
+                    <div class="help-img">
+                        <img src="assets/images/help-img-2.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -996,21 +1011,17 @@
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="footermain-form">
-                                <form action="mail.php" method="post" id="form6">
+                                <form id="form6">
                                     <div class="form-title">
                                         Заполните форму <br>
                                         для проверки города
                                     </div>
                                     <div class="form-blocks form-blocks--mobile">
-                                        <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                                        <input type="hidden" name="form_subject" value="Шестая Форма">
                                         <div class="form__link form__link--mobile">
-                                            <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Город">
-                                            <label for="fname" class="error"></label>
+                                            <input type="text" name="name" placeholder="Город" required />
                                         </div>
                                         <div class="form__link form__link--mobile">
-                                            <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                                            <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                                         </div>
         
                                         <div class="button-img">
@@ -1027,9 +1038,38 @@
                 </div>
             </div>
         </div>
+        <div style="display: none; max-width: 1200px;" id="keys-1-otz">
+            <img src="" alt="">
+        </div>
+        <div style="display: none; max-width: 800px; padding: 50px;" id="keys-2-otz">
+            <img src="assets/images/otz-1.jpg" alt="" style="width: 100%; height: auto;">
+        </div>
+        <div style="display: none; max-width: 800px;" id="keys-3-otz">
+            <img src="assets/images/otz-3.jpg" alt="" style="width: 100%; height: auto;">
+        </div>
+        <div style="display: none; max-width: 800px; padding: 50px;" id="keys-4-otz">
+            <img src="assets/images/otz-4.jpg" alt="" style="width: 100%; height: auto;">
+        </div>
+        
+        
+        <div style="display: none; max-width: 600px; padding: 20px;" id="keys-1">
+            <div class="video">
+                <video src="assets/video/keys-1.mp4"></video>
+            </div>
+        </div>
+        <div style="display: none; max-width: 600px; padding: 20px;" id="keys-2">
+            <div class="video">
+                <video src="assets/video/keys-2.mp4"></video>
+            </div>
+        </div>
+        <div style="display: none; max-width: 600px; padding: 20px;" id="keys-3">
+            <div class="video">
+                <video src="assets/video/keys-3.mp4"></video>
+            </div>
+        </div>
         <div style="display: none; max-width: 423px;" id="mobile-form1">
             <div class="mobile-block">
-                <form action="mail.php" method="post" id="form8">
+                <form id="form8">
                     <div class="form-title">
                         Получить презентацию
                     </div>
@@ -1038,18 +1078,14 @@
                             свяжемся с вами в ближайшее время
                     </div>
                     <div class="form-blocks">
-                        <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                        <input type="hidden" name="form_subject" value="Восьмая Форма">
                         <div class="form__link">
-                            <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
-                            <label for="fname" class="error"></label>
+                            <input type="text" name="name" placeholder="Введите ваше имя" required />
                         </div>
                         <div class="form__link">
-                            <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                            <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                         </div>
                         <div class="button-img">
-                            <button type="submit" value="Submit" class="btn boot"> <img src="assets/images/btn-img-1.png" alt=""> Получить презентацию</button>  
+                            <button type="submit" value="Submit" class="btn boot">Получить презентацию</button>  
                         </div>
                     </div> 
                 </form>
@@ -1057,7 +1093,7 @@
         </div>
         <div style="display: none; max-width: 423px;" id="mobile">
             <div class="mobile-block">
-                <form action="mail.php" method="post" id="form7">
+                <form id="form7">
                     <div class="form-title">
                         Нужна помощь?
                     </div>
@@ -1066,18 +1102,14 @@
                             свяжемся с вами в ближайшее время
                     </div>
                     <div class="form-blocks">
-                        <input type="hidden" name="admin_email[]" value="franch5.leads@gmail.com">
-                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
-                        <input type="hidden" name="form_subject" value="Седьмая Форма">
                         <div class="form__link">
-                            <input type="text" id="fname" data-validate-field="name" name="name" placeholder="Введите ваше имя">
-                            <label for="fname" class="error"></label>
+                            <input type="text" name="name" placeholder="Введите ваше имя" required />
                         </div>
                         <div class="form__link">
-                            <input type="tel" data-validate-field="tel" name="tel" placeholder="Введите ваш телефон">
+                            <input type="tel" name="phone" placeholder="Введите ваш телефон" required />
                         </div>
                         <div class="button-img">
-                            <button type="submit" value="Submit" class="btn boot"> <img src="assets/images/btn-img-1.png" alt=""> ПЕРЕЗВОНИТЕ МНЕ</button>  
+                            <button type="submit" value="Submit" class="btn boot">ПЕРЕЗВОНИТЕ МНЕ</button>  
                         </div>
                     </div> 
                 </form>
@@ -1090,7 +1122,8 @@
         
             <ul>
                 <li>1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
-                <li>2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта компании «SOPRANO CAPITAL».</li>
+                <li>2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта компании Общество с ограниченной ответственностью «СОПРАНО КАПИТАЛ»
+                    125039, г. Москва, Пресненская набережная, д. 10, строение 2, Э 11, пом. 97, к. 2, оф. 104</li>
             </ul>
         
             <p>2. Основные понятия, используемые в Политике</p>
@@ -1203,5 +1236,11 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="js/f5leads-init.js"></script>
+    <script src="js/f5leads.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.map&lang=ru-RU"></script>
 </body>
 </html>

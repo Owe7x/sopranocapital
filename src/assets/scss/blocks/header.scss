@@ -12,10 +12,15 @@
         }
         @include breakpoint($bp-425) {
             margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         img {
             @include breakpoint($bp-425) {
                max-width: 200px;
+               
             }
         }
     }
@@ -66,6 +71,9 @@
                 max-width: 18px;
             }
         }
+        @include breakpoint($bp-425) {
+            display: none;
+        }
     }
     a {
         text-decoration: none;
@@ -90,5 +98,11 @@
 #form1 {
     @include breakpoint($bp-425) {
         display: none;
+    }
+}
+.phone-img-1 {
+    display: none;
+    @include breakpoint($bp-425) {
+        display: block;
     }
 }

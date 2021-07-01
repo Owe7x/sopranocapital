@@ -115,7 +115,7 @@ $slick-opacity-not-active: 0.25 !default;
         left: 38%;
     }
     @include breakpoint($bp-425) {
-        left: 36%;
+        left: 25%;
     }
 }
 
@@ -139,7 +139,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: 38%;
     }
     @include breakpoint($bp-425) {
-        right: 36%;
+        right: 25%;
     }
 }
 

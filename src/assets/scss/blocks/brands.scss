@@ -5,6 +5,9 @@
     @include breakpoint($bp-768) {
         padding: 90px 0;
     }
+    @include breakpoint($bp-425) {
+        padding: 40px 0;
+    }
     &-content {
         display: flex;
         flex-direction: column;
@@ -31,14 +34,15 @@
             max-width: 300px;
         }
         @include breakpoint($bp-425) {
-            max-width: 180px;
+            max-width: 130px;
+            height: auto;
         }
     }
     @include breakpoint($bp-1140) {
         padding: 0 20px;
     }
     @include breakpoint($bp-425) {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 .brands-block-none {

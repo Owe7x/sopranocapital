@@ -8,12 +8,13 @@
         line-height: 45px;
     }
     @include breakpoint($bp-425) {
-        font-size: 26px;
-        line-height: 38px;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
     }
     @include breakpoint($bp-376) {
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 18px;
+        line-height: 25px;
     }
 }
 .p-24 {
@@ -23,8 +24,12 @@
         font-size: 18px;
         line-height: 25px;
     }
-    @include breakpoint($bp-376) {
+    @include breakpoint($bp-425) {
         font-size: 16px;
+        line-height: 22px;
+    }
+    @include breakpoint($bp-376) {
+        font-size: 14px;
         line-height: 22px;
     }
 }
@@ -36,8 +41,12 @@
         font-size: 18px;
         line-height: 25px;
     }
-    @include breakpoint($bp-376) {
+    @include breakpoint($bp-425) {
         font-size: 16px;
+        line-height: 22px;
+    }
+    @include breakpoint($bp-376) {
+        font-size: 14px;
         line-height: 22px;
     }
 }
@@ -58,12 +67,12 @@
         line-height: 45px;
     }
     @include breakpoint($bp-425) {
-        font-size: 26px;
-        line-height: 38px;
+        font-size: 16px;
+        line-height: 22px;
     }
     @include breakpoint($bp-376) {
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 .p-18 {
@@ -75,7 +84,7 @@
         line-height: 22px;
     }
     @include breakpoint($bp-425) {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 16px;
     }
 }

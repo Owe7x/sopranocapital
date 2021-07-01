@@ -3,6 +3,10 @@
     margin-top: -50px;
     padding-top: 170px;
     padding-bottom: 120px;
+    @include breakpoint($bp-425) {
+        padding-bottom: 0;
+        padding-top: 90px;
+    }
     &-content {
         max-width: 783px;
         position: relative;
@@ -47,13 +51,7 @@
                 top: 140px;
             }
             @include breakpoint($bp-425) {
-                top: 237px;
-            }
-            @include breakpoint($bp-376) {
-                top: 170px;
-            }
-            @include breakpoint($bp-321) {
-                top: 298px;
+                display: none;
             }
         }
         @include breakpoint($bp-1140) {
@@ -73,13 +71,16 @@
                 @include breakpoint($bp-768) {
                     height: 830px;
                 }
-                @include breakpoint($bp-576) {
-                    height: 950px;
-                }
-                @include breakpoint($bp-321) {
-                    height: 1000px;
+                @include breakpoint($bp-425) {
+                    display: none;
                 }
             }
+        }
+    }
+    &-img {
+        display: none;
+        @include breakpoint($bp-425) {
+            display: block;
         }
     }
 

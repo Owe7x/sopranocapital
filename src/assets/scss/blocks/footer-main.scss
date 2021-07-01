@@ -5,10 +5,16 @@
     @include breakpoint($bp-1140) {
         background-position: center;
     }
+    @include breakpoint($bp-425) {
+        padding: 40px 0;
+    }
     &-content {
         .title {
             text-align: center;
             margin-bottom: 80px;
+            @include breakpoint($bp-425) {
+                margin-bottom: 40px;
+            }
         }
     }
     &-block {
@@ -18,7 +24,7 @@
         max-width: 480px;
         display: flex;
         margin-bottom: 20px;
-        @include breakpoint($bp-376) {
+        @include breakpoint($bp-425) {
             font-size: 20px;
             line-height: 25px;
         }

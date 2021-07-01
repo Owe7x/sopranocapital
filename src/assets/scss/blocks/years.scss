@@ -6,6 +6,10 @@
     @include breakpoint($bp-768) {
         padding-bottom: 80px;
     }
+    @include breakpoint($bp-425) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     &-container {
         &__info {
             .title {
@@ -25,12 +29,18 @@
     &__text {
         font-size: 18px;
         line-height: 25px;
+        @include breakpoint($bp-425) {
+            font-size: 14px;
+            line-height: 25px;
+        }
     }
     @include breakpoint($bp-768) {
         max-width: 300px;
         justify-content: flex-start;
+        align-items: center;
         margin: 0 auto 60px;
     }
+
 }
 .bg-gray {
     background: #F9F9F9;

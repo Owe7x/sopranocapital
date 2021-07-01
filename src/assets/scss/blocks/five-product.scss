@@ -2,6 +2,9 @@
     background: #ECEDFF;
     margin-top: -40px;
     padding-top: 160px;
+    @include breakpoint($bp-425) {
+        padding-top: 50px;
+    }
     &-container {
         position: relative;
         .title {
@@ -10,6 +13,9 @@
         .p-18 {
             margin-bottom: 80px;
             max-width: 516px;
+            @include breakpoint($bp-425) {
+                margin-bottom: 40px;
+            }
         }
         &::after {
             display: block;
@@ -38,6 +44,9 @@
         &__img {
             display: flex;
             justify-content: center;
+        }
+        @include breakpoint($bp-425) {
+            margin-bottom: 40px;
         }
     }
 }

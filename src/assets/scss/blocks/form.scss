@@ -59,14 +59,31 @@ form {
         width: 229px;
         height: 73px;
         padding: 25px 30px;
+        outline: 0!important;
+        outline-offset: 0!important;
+        border: none;
+        :active, :hover, :focus {
+            outline: 0!important;
+            outline-offset: 0!important;
+        }
         @include breakpoint($bp-1140) {
-            max-width: 200px;
+            width: 200px;
         }
         @include breakpoint($bp-1050) {
-            max-width: 180px;
+            width: 180px;
         }
         @include breakpoint($bp-935) {
-            max-width: 270px;
+            width: 270px;
+            margin-bottom: 10px;
+            height: 85px;
+        }
+        @include breakpoint($bp-425) {
+            width: 300px;
+            margin-bottom: 10px;
+            height: 85px;
+        }
+        @include breakpoint($bp-376) {
+            width: 280px;
             margin-bottom: 10px;
             height: 85px;
         }
@@ -85,12 +102,15 @@ form {
     }
 }
 #form3 {
+    
     background: $secondary;
     &::before {
         background: #1976D2;
     }
     input {
         outline: none;
+        box-shadow: none;
+
     }
 }
 #form5 {
@@ -200,4 +220,10 @@ form {
             width: 260px!important;
         }
     }
+}
+label.error {
+    display: none!important;
+}
+input.error {
+    color: red!important;
 }

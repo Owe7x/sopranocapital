@@ -3,9 +3,15 @@
     background-repeat: no-repeat;
     margin-top: -50px;
     padding-top: 170px;
+    @include breakpoint($bp-425) {
+        padding-top: 90px;
+    }
     &-content {
         .title {
             margin-bottom: 56px;
+            @include breakpoint($bp-425) {
+                margin-bottom: 40px;
+            }
         }
     }
     &-info {
@@ -22,6 +28,12 @@
             height: 340px;
             background: url(../images/calc-img-1.png);
             margin-top: 50px;
+            @include breakpoint($bp-768) {
+                padding: 50px 0 50px 25px;
+            }
+            @include breakpoint($bp-425) {
+                margin-top: 0px;
+            }
             @include breakpoint($bp-376) {
                 padding: 25px 0 25px 25px;
             }

@@ -4,23 +4,39 @@
     @include breakpoint($bp-768) {
         padding-top: 80px;
     }
+    @include breakpoint($bp-425) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     &-container {
         margin-bottom: 90px;
         @include breakpoint($bp-768) {
             margin-bottom: 60px;
         }
+        @include breakpoint($bp-425) {
+            margin-bottom: 40px;
+        }
         &-profit {
             margin-bottom: 120px;
             .title {
                 margin-bottom: 80px;
+                @include breakpoint($bp-425) {
+                    margin-bottom: 40px;
+                }
             }
             @include breakpoint($bp-768) {
                 margin-bottom: 80px;
+            }
+            @include breakpoint($bp-425) {
+                margin-bottom: 40px;
             }
         }
         &-win {
             .title {
                 margin-bottom: 80px;
+                @include breakpoint($bp-425) {
+                    margin-bottom: 40px;
+                }
             }
         }
     }
@@ -40,16 +56,41 @@
             line-height: 30px;
             margin-bottom: 20px;
             color: $secondary;
+            @include breakpoint($bp-425) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            @include breakpoint($bp-376) {
+                font-size: 16px;
+                line-height: 22px;
+                margin-right: 10px;
+            }
         }
         &__subtitle {
             font-family: 'Gilroy-EXB';
             font-size: 18px;
             line-height: 25px;
             margin-bottom: 20px;
+            @include breakpoint($bp-425) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            @include breakpoint($bp-376) {
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
         &__p {
             font-size: 18px;
             line-height: 25px;
+            @include breakpoint($bp-425) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            @include breakpoint($bp-376) {
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
         &__img {
             @include breakpoint($bp-376) {
@@ -78,9 +119,13 @@
     @include breakpoint($bp-768) {
         text-align: center;
     }
+    @include breakpoint($bp-425) {
+        font-size: 18px;
+        line-height: 26px;
+    }
     @include breakpoint($bp-376) {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 .win-profit {
@@ -91,9 +136,13 @@
     @include breakpoint($bp-768) {
         text-align: center;
     }
+    @include breakpoint($bp-425) {
+        font-size: 18px;
+        line-height: 26px;
+    }
     @include breakpoint($bp-376) {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 .win-container-block {
